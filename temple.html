@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Featured Destinations</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #eaf1ea;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      font-weight: bold;
+      align-content: center;
+      justify-content: center;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #c9e0d2;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .card-content {
+      padding: 15px;
+    }
+
+    .card-content h2 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    .card-content p {
+      font-size: 0.95rem;
+      line-height: 1.4;
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    .card-content button {
+      background: #1f4d2e;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 0.9rem;
+      transition: background 0.3s ease;
+    }
+
+    .card-content button:hover {
+      background: #163a22;
+    }
+
+    span {
+      color: #1f4d2e;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Modern Architecture in <span>JHARKHAND</span></h1>
+    <p>
+      harkhand is home to many famous religious tourist points attracting devotees year-round.
+Baidyanath Dham (Deoghar) is one of the 12 Jyotirlingas of Lord Shiva.
+Parasnath Hill (Shikharji) is a sacred Jain pilgrimage site where many Tirthankaras attained salvation.
+Jagannath Temple (Ranchi), built in the 17th century, resembles the Puri temple and holds the grand Rath Yatra.
+Rajrappa Temple at the confluence of rivers is dedicated to Goddess Chhinnamasta, drawing pilgrims from across India.
+    </p>
+    <div class="cards">
+      <!-- Card 1 -->
+      <div class="card">
+        <img src="temp1.jpg" alt="Nature">
+        <div class="card-content">
+          <h2>Baidyanath Dham (Deoghar)</h2>
+          <p>ne of the 12 Jyotirlingas of Lord Shiva, Baidyanath Dham (Baba Dham) is the most sacred pilgrimage site in
+            Jharkhand. It attracts millions of devotees, especially during the Shravan Mela in July-August.</p>
+          <button>Book Now</button>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="card">
+        <img src="temp2.jpg" alt="Temple">
+        <div class="card-content">
+          <h2>Parasnath Hill (Shikharji)</h2>
+          <p>The highest mountain peak in Jharkhand (1,365 m) and the most sacred site for Jainism.
+            It is believed that 20 out of 24 Jain Tirthankaras attained Moksha (salvation) here.
+          </p>
+          <button>Book Now</button>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="card">
+        <img src="temp3.jpg"
+          alt="Steel City">
+        <div class="card-content">
+          <h2>Rajrappa Temple (Ramgarh)</h2>
+          <p>Dedicated to Chhinnamasta Devi, a form of Goddess Shakti, this temple is one of the 51 Shakti Peethas in India.
+The deity is shown in a unique form – self-decapitated, holding her own head while drinking her blood.
+</p>
+          <button>Book Now</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <h1></h1>
+    <div class="cards">
+      <!-- Card 1 -->
+      <div class="card">
+        <img src="temp4.jpg" alt="Nature">
+        <div class="card-content">
+          <h2>Basukinath Temple (Dumka)</h2>
+          <p>Another important Shiva temple in Jharkhand, often visited alongside Deoghar during pilgrimages.
+Known as the “Court of Baba Baidyanath”, where prayers are first offered before going to Deoghar.
+.</p>
+          <button>Book Now</button>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="card">
+        <img src="temp6.jpg"
+          alt="Temple">
+        <div class="card-content">
+          <h2>Jagannath Mandir (Ranchi)</h2>
+          <p>Jagannath Mandir in Ranchi, built in 1691 by King of Barkagarh, is a miniature replica of the famous Puri temple.
+Perched on a hilltop, it offers breathtaking views of Ranchi city and surrounding landscapes.</p>
+          <button>Book Now</button>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="card">
+        <img src="temp5.jpg"
+          alt="Steel City">
+        <div class="card-content">
+          <h2>Surya Mandir (Bundu)</h2>
+          <p>Surya Mandir in Bundu, Ranchi, is a beautifully crafted temple dedicated to the Sun God.
+Its unique chariot-shaped structure with 18 wheels and seven horses makes it architecturally striking.
+The temple is a serene pilgrimage spot surrounded by natural beauty and peaceful surroundings.</p>
+          <button>Book Now</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

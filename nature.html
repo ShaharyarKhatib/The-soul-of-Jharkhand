@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Featured Destinations</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #eaf1ea;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      font-weight: bold;
+      align-content: center;
+      justify-content: center;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #c9e0d2;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .card-content {
+      padding: 15px;
+    }
+
+    .card-content h2 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    .card-content p {
+      font-size: 0.95rem;
+      line-height: 1.4;
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    .card-content button {
+      background: #1f4d2e;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 0.9rem;
+      transition: background 0.3s ease;
+    }
+
+    .card-content button:hover {
+      background: #163a22;
+    }
+    span{
+        color: #1f4d2e;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Modern Architecture in <span>JHARKHAND</span></h1>
+    <p>
+        Jharkhand is blessed with stunning natural tourist points, from waterfalls to hill stations.
+Netarhat, the “Queen of Chotanagpur,” is known for its breathtaking sunrise and sunset views.
+Lodh, Dassam, Hundru, and Jonha Falls captivate visitors with their roaring beauty.
+Patratu Valley offers winding roads, lush greenery, and mesmerizing landscapes.
+Wildlife lovers explore Betla National Park and Hazaribagh Sanctuary amidst rich forests and fauna.
+    </p>
+    <div class="cards">
+      <!-- Card 1 -->
+      <div class="card">
+        <img src="nature1.jpg" alt="Nature">
+        <div class="card-content">
+          <h2>Lodh Falls(Latehar)</h2>
+          <p>Lodh Falls, also known as Budha Ghagh, is the highest waterfall in Jharkhand, plunging from about 143 meters.
+Located in the dense forests of Latehar, it offers a breathtaking natural spectacle.</p>
+          <button>Book Now</button>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="card">
+        <img src="nature2.jpg" alt="Temple">
+        <div class="card-content">
+          <h2>Netarhat (Latehar)</h2>
+          <p>Netarhat, often called the "Queen of Chotanagpur," is a hill station in Jharkhand known for its cool climate and scenic beauty.
+Famous for mesmerizing sunrises and sunsets, it attracts nature lovers and travelers year-round.</p>
+          <button>Book Now</button>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="card">
+        <img src="nature3.jpg" alt="Steel City">
+        <div class="card-content">
+          <h2>Hazaribagh Wildlife Sanctuary</h2>
+          <p>Hazaribagh Wildlife Sanctuary, spread over lush forests and hills, is home to rich flora and fauna.
+It shelters animals like tigers, leopards, sambars, nilgais, and a variety of bird species.</p>
+          <button>Book Now</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <h1></h1>
+    <div class="cards">
+      <!-- Card 1 -->
+      <div class="card">
+        <img src="nature4.jpg" alt="Nature">
+        <div class="card-content">
+          <h2>Patratu Valley</h2>
+          <p>Patratu Valley, near Ranchi, is renowned for its winding roads, lush green hills, and picturesque landscapes.
+It offers breathtaking views, especially during sunrise and sunset drives.</p>
+          <button>Book Now</button>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="card">
+        <img src="nature5.jpg" alt="Temple">
+        <div class="card-content">
+          <h2>Betla National Park</h2>
+          <p>Betla National Park, located in the Palamu district, is one of India’s earliest tiger reserves under Project Tiger.
+It boasts rich biodiversity, including tigers, elephants, leopards, sloth bears, and diverse bird species</p>
+          <button>Book Now</button>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="card">
+        <img src="nature6.jpg" alt="Steel City">
+        <div class="card-content">
+          <h2>Parasnath Hill (Shikharji)</h2>
+          <p>Parasnath Hill, also known as Shikharji, is the highest peak in Jharkhand and a revered Jain pilgrimage site.
+It is believed that 20 of the 24 Jain Tirthankaras attained salvation here.</p>
+          <button>Book Now</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+

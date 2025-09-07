@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Featured Destinations</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #eaf1ea;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      font-weight: bold;
+      align-content: center;
+      justify-content: center;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #c9e0d2;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .card-content {
+      padding: 15px;
+    }
+
+    .card-content h2 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    .card-content p {
+      font-size: 0.95rem;
+      line-height: 1.4;
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    .card-content button {
+      background: #1f4d2e;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 0.9rem;
+      transition: background 0.3s ease;
+    }
+
+    .card-content button:hover {
+      background: #163a22;
+    }
+    span{
+        color: #1f4d2e;
+    }
+  
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Modern Architecture in <span>JHARKHAND</span></h1>
+    <p>
+       Jharkhand has several history-rich tourist points reflecting its cultural and royal past.
+The Rajmahal Hills hold remnants of ancient civilizations and Mughal history.
+Navratangarh Fort, once the capital of the Nagvanshi dynasty, showcases medieval architecture.
+The Palamu Forts narrate tales of courage and Mughal invasions.
+The Jagannath Mandir (Ranchi), built in 1691, stands as a historical and architectural marvel.
+    </p>
+    <div class="cards">
+      <!-- Card 1 -->
+      <div class="card">
+        <img src="history1.jpg" alt="Nature">
+        <div class="card-content">
+          <h2>Palamu Forts, Latehar</h2>
+          <p>The Palamu Forts are two ancient forts located inside the dense forests of the Palamu Tiger Reserve in Latehar district, Jharkhand. Built by the Chero kings in the 16th–17th century, the forts showcase the region’s rich history and architectural style.</p>
+          <button>Book Now</button>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="card">
+        <img src="history2.jpg" alt="Temple">
+        <div class="card-content">
+          <h2>Maluti Terracotta Temples, Dumka</h2>
+          <p>The Maluti Terracotta Temples are a unique group of ancient temples located in Dumka district, Jharkhand. Built between the 17th and 19th centuries by the Baj Basanta dynasty, the temples are famous for their terracotta art.</p>
+          <button>Book Now</button>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="card">
+        <img src="history3.jpg" alt="Steel City">
+        <div class="card-content">
+          <h2>Steel City Of India</h2>
+          <p>Navratangarh Fort, also known as Doisa Fort, is an ancient fort built in the 17th century by King Durjan Shah of the Nagvanshi dynasty. Located in Gumla district, the fort is surrounded by hills and forests.</p>
+          <button>Book Now</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <h1></h1>
+    <div class="cards">
+      <!-- Card 4 -->
+      <div class="card">
+        <img src="history4.jpg" alt="Nature">
+        <div class="card-content">
+          <h2>Benisagar, West Singhbhum</h2>
+          <p>Benisagar is an ancient archaeological site located near Chaibasa in West Singhbhum district, Jharkhand. It is famous for its ruins of old temples, sculptures, and inscriptions, which date back to the 9th–10th century</p>
+          <button>Book Now</button>
+        </div>
+      </div>
+      <!-- Card 5 -->
+      <div class="card">
+        <img src="history5.jpg" alt="Temple">
+        <div class="card-content">
+          <h2>Isko Rock Paintings, Hazaribagh</h2>
+          <p>The Isko Rock Paintings are ancient cave paintings located in Isko village of Hazaribagh district, Jharkhand. These prehistoric artworks, believed to be more than 5,000 years old, depict human figures and animals.</p>
+          <button>Book Now</button>
+        </div>
+      </div>
+      <!-- Card 6 -->
+      <div class="card">
+        <img src="history6.jpg" alt="Steel City">
+        <div class="card-content">
+          <h2>Teliyagarhi Fort, Sahibganj</h2>
+          <p>Teliyagarhi Fort is an ancient fort located on the banks of the Ganga in Sahibganj district, Jharkhand. Built during the medieval period, it served as an important entry point to Bengal and was strategically significant in many battles.</p>
+          <button>Book Now</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+

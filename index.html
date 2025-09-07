@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jharkhand Ecotours</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#"><img src="ecologo.jpg" alt="" /><span>Jharkhand Ecotravels</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="site-nav" class="site-nav" role="navigation">
+        <a href="#destinations">Destinations</a>
+        <a href="#activities">Activities</a>
+        <a href="#market">Marketplace</a>
+        <a href="#about">About Us</a>
+        <a class="btn btn-outline" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" aria-label="Discover the soul of Jharkhand">
+      <div class="hero-slider" data-autoplay="true" data-interval="4000">
+        <div class="slide" style="--bg:url(img3.jpg);"><div class="overlay"></div></div>
+        <div class="slide" style="--bg:url(img7.jpg);"><div class="overlay"></div></div>
+        <div class="slide" style="--bg:url(img4.jpg);"><div class="overlay"></div></div>
+      </div>
+      <div class="hero-content container">
+        <h1>Discover the soul of <span>Jharkhand</span></h1>
+        <p>Nature, Culture, Preserve Community.</p>
+        <div class="cta">
+          <a class="btn" href="#plan">Plan Your Trip</a>
+          <a class="btn btn-alt" href="#explore">Explore More</a>
+        </div>
+      </div>
+     
+    </section>
+          <!-- Chat Widget -->
+  <div class="chat-widget" id="chatWidget" aria-hidden="false">
+    <button id="chatToggle" class="chat-toggle" aria-label="Open chat">
+      <!-- simple chat bubble SVG -->
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+        <path d="M21 15a2 2 0 0 1-2 2H8l-5 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10z" fill="currentColor"/>
+      </svg>
+    </button>
+
+    <div class="chat-panel" id="chatPanel" role="dialog" aria-label="Chat">
+      <div class="chat-header">
+        <strong>Chat with us</strong>
+        <button id="chatClose" class="chat-close" aria-label="Close chat">&times;</button>
+      </div>
+
+      <div class="chat-body" id="chatBody">
+        <div class="chat-msg bot">Hi! 👋 How can we help you today?</div>
+        <div class="chat-msg info">This is a static widget — connect a backend or link to WhatsApp for live support.</div>
+      </div>
+
+      <form class="chat-input" id="chatForm" onsubmit="event.preventDefault();">
+        <input id="chatText" type="text" placeholder="Type a message..." aria-label="Message">
+        <button type="submit" class="send-btn" id="sendMessageBtn">Send</button>
+      </form>
+    </div>
+  </div>
+
+    <!-- FEATURED DESTINATIONS -->
+    <section id="destinations" class="section container">
+      <div class="section-head">
+        <h2>Featured Destinations</h2>
+        <a class="link" href="#">View all</a>
+      </div>
+      <div class="card-grid">
+        <article class="card">
+          <img src="https://carchalak.com/wp-content/uploads/2023/05/Untitled-design-14-1.jpg" alt="Netarhat Hills" />
+          <div class="card-body">
+            <h3>Nature's hidden paradise</h3>
+            <p>Uncover a valley untouched by time, where lush landscapes and serene beauty invite you to explore. A perfect escape for peace, adventure, and unforgettable memories.</p>
+            <a class="btn-sm" href="nature.html">Learn more</a>
+          </div>
+        </article>
+        <article class="card">
+          <img src="img7.jpg" alt="Ancient Temple" />
+          <div class="card-body">
+            <h3>Discover the Divine Path</h3>
+            <p>Step into sacred destinations where spirituality, and peace come together. Experience the divine essence beyond what eyes can see — a soulful journey that connects inner harmony.</p>
+            <a class="btn-sm" href="temple.html">Learn more</a>
+          </div>
+        </article>
+        <article class="card">
+          <img src="historyCover.jpg" alt="Tribal Village" />
+          <div class="card-body">
+            <h3>Where Every Stone Tells a Story.</h3>
+            <p>Jharkhand’s historical sites showcase rich heritage, ancient architecture, and cultural legacy, where every stone whispers untold stories of time.</p>
+            <a class="btn-sm" href="morden.html">Learn more</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- MARKETPLACE -->
+    <section id="market" class="section container">
+      <div class="section-head">
+        <h2>Local Marketplace</h2>
+        <a class="link" href="shop.html">Browse shop</a>
+      </div>
+      <div class="product-grid">
+        <article class="product">
+          <img src="basket.jpg" alt="Handwoven Basket">
+          <div class="product-body">
+            <h4>Handwoven Basket</h4>
+            <p>Natural fibres</p>
+            <div class="price-row">
+              <span class="price">₹899-1,900</span>
+              <a class="btn-chip" href="shop.html">Shop now</a>
+            </div>
+          </div>
+        </article>
+        <article class="product">
+          <img src="pot.jpg" alt="Terracotta Pot">
+          <div class="product-body">
+            <h4>Terracotta Pot</h4>
+            <p>Tribal design</p>
+            <div class="price-row">
+              <span class="price">₹1,299-3,900</span>
+              <a class="btn-chip" href="shop.html">Shop now</a>
+            </div>
+          </div>
+        </article>
+        <article class="product">
+          <img src="spices.jpg" alt="Organic Spices">
+          <div class="product-body">
+            <h4>Organic Spices</h4>
+            <p>Local flavours</p>
+            <div class="price-row">
+              <span class="price">₹999-2,500</span>
+              <a class="btn-chip" href="shop.html">Shop now</a>
+            </div>
+          </div>
+        </article>
+        <article class="product">
+          <img src="paint.jpg" alt="Tribal Painting">
+          <div class="product-body">
+            <h4>Tribal Painting</h4>
+            <p>Handmade artwork</p>
+            <div class="price-row">
+              <span class="price">₹2,000 -3,900</span>
+              <a class="btn-chip" href="shop.html">Shop now</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section container about">
+      <div>
+        <h2>About Us</h2>
+        <p>We promote eco & cultural tourism in Jharkhand by connecting travellers with local communities, guides, and artisans. Travel slow, buy local, and help preserve nature.</p>
+        <ul class="bullets">
+          <li>Community-first itineraries</li>
+          <li>Verified homestays & guides</li>
+          <li>Low-impact travel tips</li>
+        </ul>
+      </div>
+      <img src="dance.jpg" alt="Community tour" />
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="container footer-grid">
+      <div>
+       <a class="brand brand-footer" href="#"><img src="ecologo.jpg" alt="" /><span>ECO CODER</span></a>
+        <p>© <span id="year"></span> EcoCoder. All rights reserved.</p>
+      </div>
+      <form class="contact-form" onsubmit="event.preventDefault(); alert('Thanks! We will reach out soon.');">
+        <label for="email">Get updates</label>
+        <div class="input-row">
+          <input id="email" type="email" placeholder="eco.code@gmail.com" required>
+          <button class="btn" type="submit">Subscribe</button>
+        </div>
+      </form>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

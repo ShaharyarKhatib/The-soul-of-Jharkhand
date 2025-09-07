@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local Marketplace</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #d2d6c8, #e3e4d9);
+      color: #111;
+    }
+
+    /* Container */
+    .container {
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    /* Header */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 25px;
+    }
+
+    .header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+    }
+
+    .browse-link {
+      font-size: 1rem;
+      color: #008c4a;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .browse-link:hover {
+      color: #005c31;
+    }
+
+    /* Product Grid */
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    /* Product Card */
+    .product-card {
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .product-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 24px rgba(0,0,0,0.18);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    /* Info */
+    .product-info {
+      padding: 16px;
+    }
+
+    .product-info h2 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .product-info p {
+      font-size: 0.9rem;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      display: block;
+      font-weight: bold;
+      font-size: 1rem;
+      margin-bottom: 12px;
+    }
+
+    /* Button */
+    .product-info button {
+      background: #008c4a;
+      color: #fff;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 12px;
+      cursor: pointer;
+      font-size: 0.9rem;
+      font-weight: bold;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    .product-info button:hover {
+      background: #005c31;
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <h1>Local Marketplace</h1>
+      <a href="#" class="browse-link">Browse shop</a>
+    </div>
+
+    <!-- Product Grid -->
+    <div class="product-grid">
+      <!-- Product 1 -->
+      <div class="product-card">
+        <img src="bas1.jpg" alt="Handwoven Basket">
+        <div class="product-info">
+          <h2>Handmade Basket</h2>
+          <p>made from glitter foam sheets, decorated with beads, pearls, and flowers.</p>
+          <span class="price">₹850</span>
+          <button>Shop now</button>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product-card">
+        <img src="bas2.jpg" alt="Terracotta Pot">
+        <div class="product-info">
+          <h2>Terracotta Pot</h2>
+          <p>Made from natural materials like cane or bamboo</p>
+          <span class="price">₹999</span>
+          <button>Shop now</button>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product-card">
+        <img src="bas3.jpg" alt="Organic Spices">
+        <div class="product-info">
+          <h2>Home Decores</h2>
+          <p>Made from natural materials like cane or bamboo</p>
+          <span class="price">₹999</span>
+          <button>Shop now</button>
+        </div>
+      </div>
+
+      <!-- Product 4 -->
+      <div id="target" class="product-card">
+        <img src="bas4.jpg" alt="Tribal Painting">
+        <div class="product-info">
+          <h2>Home Decores</h2>
+          <p>Made from natural materials like cane or bamboo</p>
+          <span class="price">₹1,000–1,400</span>
+          <button>Shop now</button>
+        </div>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="product-card">
+        <img src="spices1.jpg" alt="Tribal Jewellery">
+        <div class="product-info">
+          <h2>Pipli (Long Pepper)</h2>
+          <p>Similar to black pepper but with a stronger, slightly sweet heat, often used in pickles, chutneys, and curries for both flavor and medicinal benefits</p>
+          <span class="price">₹999</span>
+          <button>Shop now</button>
+        </div>
+      </div>
+
+      <!-- Product 6 -->
+      <div class="product-card">
+        <img src="spices2.jpg" alt="Handloom Fabric">
+        <div class="product-info">
+          <h2>Satawar (Shatavari)</h2>
+          <p> Employed in herbal remedies, commonly boiled with milk or made into tonic powder for health and immune support.</p>
+          <span class="price">₹1,200</span>
+          <button>Shop now</button>
+        </div>
+      </div>
+       <div class="product-card">
+        <img src="spices3.jpg" alt="Handloom Fabric">
+        <div class="product-info">
+          <h2>Rakta Chandana</h2>
+          <p> Sandalwood powder valued for its cooling effect and subtle woody, sweet flavor, used in cooking and medicine.</p>
+          <span class="price">₹999</span>
+          <button>Shop now</button>
+        </div>
+      </div>
+
+
+       <div class="product-card">
+        <img src="spices4.jpg" alt="Handloom Fabric">
+        <div class="product-info">
+          <h2>Deep Tea</h2>
+          <p>NA strong, bitter herb steeped as tea or used medicinally to aid digestion and relieve fever.</p>
+          <span class="price">₹399</span>
+          <button>Shop now</button>
+        </div>
+      </div>
+
+       <div class="product-card">
+        <img src="paint4.jpg" alt="Handloom Fabric">
+        <div class="product-info">
+          <h2>Tribal Painting</h2>
+          <p>Handmade artwork</p>
+          <span class="price">₹1,200</span>
+          <button>Shop now</button>
+        </div>
+      </div>
+
+       <div class="product-card">
+        <img src="paint3.jpg" alt="Handloom Fabric">
+        <div class="product-info">
+          <h2>Tribal Painting</h2>
+          <p>Handmade artwork</p>
+          <span class="price">₹899</span>
+          <button>Shop now</button>
+        </div>
+      </div>
+
+       <div class="product-card">
+        <img src="paint2.jpg" alt="Handloom Fabric">
+        <div class="product-info">
+          <h2>Tribal Painting</h2>
+          <p>Handmade artwork</p>
+          <span class="price">₹1,899</span>
+          <button>Shop now</button>
+        </div>
+      </div>
+
+       <div class="product-card">
+        <img src="paint1.jpg" alt="Handloom Fabric">
+        <div class="product-info">
+          <h2>Tribal Painting</h2>
+          <p>Handmade artwork</p>
+          <span class="price">₹699</span>
+          <button>Shop now</button>
+        </div>
+      </div>
+
+     
+    </div>
+  </div>
+</body>
+</html>
