@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Your Trip - EcoTravel Jharkhand</title>
+  <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+  <div class="booking-container">
+    <h2>Book Your Eco Trip</h2>
+    <form action="#" method="POST">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="destination">Choose Destination</label>
+      <select id="destination" name="destination" required>
+        <option value="">-- Select --</option>
+        <option value="betla">Betla National Park</option>
+        <option value="netarhat">Netarhat</option>
+        <option value="hundru">Hundru Falls</option>
+        <option value="parasnath">Parasnath Hill</option>
+      </select>
+
+      <label for="date">Travel Date</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="travellers">Number of Travellers</label>
+      <input type="number" id="travellers" name="travellers" min="1" max="20" required>
+
+      <button type="submit" class="btn">Confirm Booking</button>
+    </form>
+  </div>
+</body>
+</html>
