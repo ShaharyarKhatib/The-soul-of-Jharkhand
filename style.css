@@ -449,6 +449,9 @@ img {
   .site-nav a {
   color:#f8f9fa;
   }
+  .site-nav a:active {
+  background-color: red; /* changes only when button is pressed */
+}
   .site-nav.open {
     display: flex;
   }
@@ -585,3 +588,4 @@ img {
   padding: 0 16px;
   cursor: pointer;
 }
+
