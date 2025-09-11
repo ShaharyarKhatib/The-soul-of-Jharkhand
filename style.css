@@ -413,7 +413,7 @@ img {
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, .12);
   background: #0c1714;
-  color: var(--text);
+  color:#f8f9fa;
 }
 
 /* ===== Responsive ===== */
@@ -446,7 +446,9 @@ img {
     flex-direction: column;
     gap: 14px;
   }
-
+  .site-nav a {
+  color:#f8f9fa;
+  }
   .site-nav.open {
     display: flex;
   }
