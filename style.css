@@ -439,7 +439,7 @@ img {
   .site-nav {
     position: fixed;
     inset: 64px 0 auto 0;
-    background: #0b1412;
+    background: #29413c;
     padding: 16px;
     border-bottom: 1px solid rgba(255, 255, 255, .06);
     display: none;
@@ -447,7 +447,7 @@ img {
     gap: 14px;
   }
   .site-nav a {
-  color:#29413c;
+  color: #f8f9fa;
   }
   
   .site-nav.open {
@@ -586,5 +586,6 @@ img {
   padding: 0 16px;
   cursor: pointer;
 }
+
 
 
