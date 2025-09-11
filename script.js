@@ -108,4 +108,31 @@ function toggleSendButton() {
 }
 
 chatInput.addEventListener('input', toggleSendButton);
+
 toggleSendButton(); // run once on load
+
+// Navbar toggle
+const navToggle = document.querySelector(".nav-toggle");
+const siteNav = document.getElementById("site-nav");
+
+navToggle.addEventListener("click", () => {
+  const expanded = navToggle.getAttribute("aria-expanded") === "true" || false;
+  navToggle.setAttribute("aria-expanded", !expanded);
+  siteNav.classList.toggle("active");
+});
+
+// Chat widget
+const chatToggle = document.getElementById("chatToggle");
+const chatPanel = document.getElementById("chatPanel");
+const chatClose = document.getElementById("chatClose");
+
+chatToggle.addEventListener("click", () => {
+  chatPanel.classList.toggle("active");
+});
+
+chatClose.addEventListener("click", () => {
+  chatPanel.classList.remove("active");
+});
+
+// Dynamic year
+document.getElementById("year").textContent = new Date().getFullYear();
