@@ -84,6 +84,7 @@
       font-weight: bold;
       cursor: pointer;
       transition: 0.3s;
+      
     }
 
     .login-container .btn:hover {
@@ -99,9 +100,61 @@
     }
 
     .signup-text a {
-      color: #c8e6c9;
+      color: #0d0e0d;
       text-decoration: underline;
     }
+
+    
+    .social-login {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+
+    .social-login button {
+      border: none;
+      border-radius: 50%;
+      padding: 10px;
+      background: #fff;
+      cursor: pointer;
+      width: 45px;
+      height: 45px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+    }
+
+    
+    .social-login img {
+      width: 22px;
+      height: 22px;
+    }
+
+    .signup-text {
+      font-size: 14px;
+    }
+
+ 
+    .forgot {
+      text-align: right;
+      font-size: 13px;
+      margin-bottom: 15px;
+    }
+
+    .forgot a {
+      color: #f0f2f4;
+      text-decoration: none;
+    }
+     
+    .divider {
+    margin: 20px 0;
+    font-size: 14px;
+    color: #fcfafa;
+    position: relative;
+}
+
 
     /* Animation */
     @keyframes fadeIn {
@@ -119,8 +172,17 @@
 
       <label for="password">Password</label>
       <input type="password" id="password" name="password" placeholder="Enter your password" required>
-
+       
+      <div class="forgot"><a href="#">Forgot Password?</a></div>
       <button type="submit" class="btn">Login</button>
+
+      <div class="divider">or continue with</div>
+      
+      <div class="social-login">
+        <button><img src="https://cdn-icons-png.flaticon.com/512/300/300221.png" alt="Google"></button>
+        <button><img src="https://cdn-icons-png.flaticon.com/512/5968/5968830.png" alt="X"></button>
+        <button><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></button>
+      </div>
 
       <p class="signup-text">
         Don’t have an account? <a href="#">Sign Up</a>
