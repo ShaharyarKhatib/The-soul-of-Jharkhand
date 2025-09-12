@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plan Your Trip</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: url(img1.jpg) no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Animation */
+    @keyframes riseUp {
+      0% {
+        opacity: 0;
+        transform: translateY(80px) scale(0.95);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    .container {
+      background: linear-gradient(135deg, #4b8143, #87a47c);
+      padding: 15px;
+      border-radius: 15px;
+      width: 320px;
+      box-shadow: 0px 4px 14px rgba(0,0,0,0.2);
+
+      /* Animation effect */
+      animation: riseUp 0.8s ease-out forwards;
+    }
+
+    .container h2 {
+      text-align: center;
+      color: white;
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    .form-box {
+      background: white;
+      padding: 15px;
+      border-radius: 12px;
+    }
+
+    label {
+      font-weight: 600;
+      font-size: 13px;
+      display: block;
+      margin: 6px 0 3px;
+      color: #333;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      outline: none;
+      margin-bottom: 6px;
+      font-size: 13px;
+    }
+
+    .row {
+      display: flex;
+      gap: 6px;
+    }
+
+    .row input {
+      flex: 1;
+    }
+
+    textarea {
+      resize: none;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
+
+    .btn {
+      flex: 1;
+      padding: 8px;
+      border: none;
+      border-radius: 20px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .reset {
+      background: #f0f0f0;
+      color: #333;
+      margin-right: 6px;
+    }
+
+    .search {
+      background: linear-gradient(135deg, #01be3b, #00c497);
+      color: white;
+    }
+
+    .reset:hover {
+      background: #ddd;
+    }
+
+    .search:hover {
+      opacity: 0.85;
+    }
+
+    /* Bottom Nav */
+    .bottom-nav {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 10px;
+      padding: 8px;
+      background: white;
+      border-radius: 10px;
+    }
+
+    .bottom-nav a {
+      text-align: center;
+      color: #666;
+      font-size: 11px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>PLAN YOUR TRIP</h2>
+    <div class="form-box">
+      <label>Where to Next?</label>
+      <input type="text" placeholder="Places to visit (e.g.Patratu Valley, Hundru Falls)">
+
+      <label>Preferred Dates</label>
+      <div class="row">
+        <input type="date">
+        <input type="date">
+      </div>
+
+      <label>Traveler Details</label>
+      <div class="row">
+        <input type="number" placeholder="Adults">
+        <input type="number" placeholder="Children">
+      </div>
+
+      <label>Other Requirements</label>
+      <textarea rows="2" placeholder="Interests (e.g. history, food, hiking, etc.)"></textarea>
+
+      <div class="buttons">
+        <button class="btn reset">Reset</button>
+        <button class="btn search">Search</button>
+      </div>
+    </div>
+
+   
+  </div>
+</body>
+</html>
